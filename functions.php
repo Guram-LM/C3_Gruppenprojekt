@@ -100,6 +100,34 @@ function team($team) {
 
 
 
+// კომენტარების სლაიდერი
+
+
+function display_testimonials($testimonials) {
+  $is_active = true; 
+
+  foreach ($testimonials as $testimonial) {
+      echo '<div class="carousel-item' . ($is_active ? ' active' : '') . '">';
+      echo '  <div class="box">';
+      echo '    <div class="client_info">';
+      echo '      <div class="client_name">';
+      echo '        <h5>' . htmlspecialchars($testimonial['name']) . '</h5>';
+      echo '        <h6>' . htmlspecialchars($testimonial['role']) . '</h6>';
+      echo '      </div>';
+      echo '      <i class="fa fa-quote-left" aria-hidden="true"></i>';
+      echo '    </div>';
+      echo '    <p>' . htmlspecialchars($testimonial['text']) . '</p>';
+      echo '  </div>';
+      echo '</div>';
+      $is_active = false; 
+  }
+}
+
+
+// ავტორი მართა მოსაშვილი
+
+
+
 
 // ფუთერის აიქონები
 

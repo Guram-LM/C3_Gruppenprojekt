@@ -95,6 +95,35 @@ $team = [
 
 
 
+
+
+// კომენტარების სლაიდერი
+// ავტორი 
+$testimonials = [
+    [
+        "name" => "Morijorch",
+        "text" => "Editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various.",
+        "role" => "Default model text"
+    ],
+    [
+        "name" => "Rochak",
+        "text" => "Various editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various.",
+        "role" => "Default model text"
+    ],
+    [
+        "name" => "Brad Johns",
+        "text" => "Various editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various.",
+        "role" => "Default model text"
+    ]
+];
+
+// კომენტარების სლაიდერი
+// ავტორი 
+
+
+
+
+
 // ფუთერი
 // ავტორი ნუცა გოგინაშვილი
 
