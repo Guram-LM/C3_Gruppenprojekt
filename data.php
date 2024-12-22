@@ -45,3 +45,137 @@ $Cure=[
 ];
 // ავტორი თამუნა ვეფხვაძე
 // ჰოსპიტალური მლურნალობა
+
+// ფუთერი
+// ავტორი ნუცა გოგინაშვილი
+
+
+// ფუთერის კონტაქტები
+
+
+$contactInfo = [
+    [
+        'icon' => 'fa-map-marker',
+        'text' => 'Location',
+        'link' => '#'
+    ],
+    [
+        'icon' => 'fa-phone',
+        'text' => 'Call +01 1234567890',
+        'link' => '#'
+    ],
+    [
+        'icon' => 'fa-envelope',
+        'text' => 'demo@gmail.com',
+        'link' => '#'
+    ]
+];
+
+// ფუთერის კონტაქტები
+
+
+
+
+// ფუთერის აიქონები
+
+$socialLinks = [
+    [
+        'icon' => 'fa-facebook',
+        'link' => '#'
+    ],
+    [
+        'icon' => 'fa-twitter',
+        'link' => '#'
+    ],
+    [
+        'icon' => 'fa-linkedin',
+        'link' => '#'
+    ],
+    [
+        'icon' => 'fa-instagram',
+        'link' => '#'
+    ]
+];
+
+// ფუთერის აიქონები
+
+
+// ფუთერის ნავიგაცია
+
+
+$menuLinks = [
+    [
+        'text' => 'Home',
+        'link' => "./index.php",
+        'is_active' => true
+    ],
+    [
+        'text' => 'About',
+        'link' => './about.php',
+        'is_active' => false
+    ],
+    [
+        'text' => 'Treatment',
+        'link' => './treatment.php',
+        'is_active' => false
+    ],
+    [
+        'text' => 'Doctors',
+        'link' => './doctor.php',
+        'is_active' => false
+    ],
+    [
+        'text' => 'Testimonial',
+        'link' => './testimonial.php',
+        'is_active' => false
+    ],
+    [
+        'text' => 'Contact us',
+        'link' => './contact.php',
+        'is_active' => false
+    ]
+];
+
+// ფუთერის ნავიგაცია
+
+
+// ფუთერის კონტენტი
+$latestPosts = [
+    [
+        'img' => 'images/post1.jpg',
+        'text' => 'Normal distribution'
+    ],
+    [
+        'img' => 'images/post2.jpg',
+        'text' => 'Normal distribution'
+    ]
+];
+
+
+$newsPosts = [
+    [
+        'img' => 'images/post3.jpg',
+        'text' => 'Normal distribution'
+    ],
+    [
+        'img' => 'images/post4.png',
+        'text' => 'Normal distribution'
+    ]
+];
+
+// ფუთერის კონტენტი
+
+
+
+// ფუთერის საბსქრაიბ ველი
+
+$subscribers = [];
+
+
+// ფუთერის საბსქრაიბ ველი
+
+
+
+// ფუთერი
+// ავტორი ნუცა გოგინაშვილი
+
