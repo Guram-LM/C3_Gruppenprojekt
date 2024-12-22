@@ -63,6 +63,41 @@ function generateContactInfo($data) {
 }
 
 
+// ავტორი მართა მოსაშვილი
+// ექიმების ჯგუფს ავტოტი 
+
+function team($team) {
+    $repeat_count = 4; 
+    $team_g = [];
+
+  
+    for ($i = 0; $i < $repeat_count; $i++) {
+        $team_g = array_merge($team_g, $team);
+    }
+
+    foreach ($team_g as $member) {
+        echo '<div class="item">';
+        echo '<div class="box">';
+        echo '<div class="img-box">';
+        echo '<img src="' . $member['image'] . '" alt="" />';
+        echo '</div>';
+        echo '<div class="detail-box">';
+        echo '<h5>' . $member['name'] . '</h5>';
+        echo '<h6>' . $member['specialty'] . '</h6>';
+        echo '<div class="social_box">';
+        foreach ($member['social_links'] as $platform => $link) {
+            echo '<a href="' . $link . '">';
+            echo '<i class="fa fa-' . $platform . '" aria-hidden="true"></i>';
+            echo '</a>';
+        }
+        echo '</div>';
+        echo '</div>';
+        echo '</div>';
+        echo '</div>';
+    }
+}
+
+
 
 
 

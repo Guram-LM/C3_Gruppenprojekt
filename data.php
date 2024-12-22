@@ -46,6 +46,55 @@ $Cure=[
 // ავტორი თამუნა ვეფხვაძე
 // ჰოსპიტალური მლურნალობა
 
+
+// ექიმების ჯგუფს
+// ავტორი მართა მოსაშვილი
+
+$team = [
+    [
+        'name' => 'Hennry',
+        'specialty' => 'MBBS',
+        'image' => 'images/team1.jpg',
+        'social_links' => [
+            'facebook' => '',
+            'twitter' => '',
+            'linkedin' => '',
+            'instagram' => ''
+        ]
+    ],
+    [
+        'name' => 'Jenni',
+        'specialty' => 'MBBS',
+        'image' => 'images/team2.jpg',
+        'social_links' => [
+            'facebook' => '',
+            'twitter' => '',
+            'linkedin' => '',
+            'instagram' => ''
+        ]
+    ],
+    [
+        'name' => 'Morco',
+        'specialty' => 'MBBS',
+        'image' => 'images/team3.jpg',
+        'social_links' => [
+            'facebook' => '',
+            'twitter' => '',
+            'linkedin' => '',
+            'instagram' => ''
+        ]
+    ]
+];
+
+
+// ექიმების ჯგუფს
+// ავტორი მართა მოსაშვილი
+
+
+
+
+
+
 // ფუთერი
 // ავტორი ნუცა გოგინაშვილი
 
