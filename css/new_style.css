@@ -1,0 +1,59 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/* სტილი ღილაკისთვის */
+.batuna {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #00c6a9;  
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.batuna:hover {
+  background-color: #000000; 
+}
+
+.boduna {
+  background-color:#00c6a9;
+  ;
+}
+.nev-page {
+  display: flex;
+  max-width: 500px;
+  flex-direction: column;
+  margin: 200px auto;
+  padding: 35px;
+  border-radius: 15px;
+  gap: 35px;
+  background-color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+}
+
+.divuna{
+  display: flex;
+  max-width: 500px;
+  flex-direction: column;
+  margin: 100px auto;
+  padding: 35px;
+  border-radius: 15px;
+  gap: 35px;
+  background-color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+}
+/* სტილი ღილაკისთვის */
+
+
+
