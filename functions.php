@@ -44,5 +44,96 @@ function TreatmentContent($MedicalCare)
 
 
 
+// ფუთერის ფუნქციები
+// ავტორი ნუცა გოგინაშვილი
 
+// ფუთერის კონტაქტები
+
+
+function generateContactInfo($data) {
+  $html = '<div class="info_contact">';
+  foreach ($data as $item) {
+      $html .= '<a href="' . htmlspecialchars($item['link']) . '">';
+      $html .= '<i class="fa ' . htmlspecialchars($item['icon']) . '" aria-hidden="true"></i>';
+      $html .= '<span>' . htmlspecialchars($item['text']) . '</span>';
+      $html .= '</a>';
+  }
+  $html .= '</div>';
+  return $html;
+}
+
+
+
+
+
+// ფუთერის აიქონები
+
+
+function generateSocialLinks($links) {
+  $html = '';
+  foreach ($links as $link) {
+      $html .= '<a href="' . htmlspecialchars($link['link']) . '">';
+      $html .= '<i class="fa ' . htmlspecialchars($link['icon']) . '" aria-hidden="true"></i>';
+      $html .= '</a>';
+  }
+  return $html;
+}
+
+
+
+
+// ფუთერის აიქონები
+
+function generateMenuLinks($links) {
+  $html = '<div class="info_links_menu">';
+  foreach ($links as $link) {
+      $activeClass = $link['is_active'] ? 'active' : '';
+      $html .= '<a class="' . $activeClass . '" href="' . htmlspecialchars($link['link']) . '">';
+      $html .= htmlspecialchars($link['text']);
+      $html .= '</a>';
+  }
+  $html .= '</div>';
+  return $html;
+}
+
+
+
+// ფუთერის კონტენტი
+
+function generateLatestPosts($posts) {
+  $html = '<div class="info_post">';
+  $html .= '<h5>LATEST POSTS</h5>';
+  foreach ($posts as $post) {
+      $html .= '<div class="post_box">';
+      $html .= '<div class="img-box">';
+      $html .= '<img src="' . htmlspecialchars($post['img']) . '" alt="">';
+      $html .= '</div>';
+      $html .= '<p>' . htmlspecialchars($post['text']) . '</p>';
+      $html .= '</div>';
+  }
+  $html .= '</div>';
+  return $html;
+}
+
+
+
+// ფუთერის კონტენტი
+
+function saveEmail($email) {
+  $file = 'subscribers.txt';
+  $existingEmails = file_get_contents($file);
+  $existingEmails .= $email . "\n";
+  file_put_contents($file, $existingEmails);
+}
+
+
+function redirectToThankYou() {
+  header("Location: thankyou.php");
+  exit();
+}
+
+
+
+// ფუთერის ფუნქციები
+// ავტორი ნუცა გოგინაშვილი
 
