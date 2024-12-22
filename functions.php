@@ -11,3 +11,38 @@ function display_about_hospital($data) {
 }
 // ავტორი თამუნა ვეფხვაძე
 // ჰოსპიტალის შესახებ 
+
+
+
+// ავტორი თამუნა ვეფხვაძე
+//  ჰოსპიტალური მკურნალობა
+function TreatmentContent($MedicalCare) 
+{
+    foreach($MedicalCare as $HospitalCare){
+        echo '<div class="col-md-6 col-lg-3">
+        <div class="box ">
+          <div class="img-box">
+            <img src="'.$HospitalCare['img'].'" alt="">
+          </div>
+          <div class="detail-box">
+            <h4>
+             '.$HospitalCare['title'].'
+            </h4>
+            <p>
+             ' . $HospitalCare['description'] . '
+            </p>
+            <a href="">
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>';
+    }
+}
+// ავტორი თამუნა ვეფხვაძე
+// ჰოსპიტალური მლურნალობა
+
+
+
+
+
