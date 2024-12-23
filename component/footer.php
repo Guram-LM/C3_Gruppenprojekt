@@ -1,4 +1,6 @@
- <!-- foooter ავტორი ნუცა გოგინაშვილი -->
+ <!-- foooter 
+      ავტორი ნუცა გოგინაშვილი -->
+      
  <section class="info_section ">
       <div class="container">
 

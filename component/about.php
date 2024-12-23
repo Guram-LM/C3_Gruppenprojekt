@@ -1,16 +1,6 @@
 
-
-
-  <!-- about section -->
-
-
-
-
-
-
-
-
-
+<!-- ჰოსპიტალური მკურნალობა
+     ავტორი თამუნა ვეფხვაძე -->
   <section class="about_section layout_padding">
     <div class="container  ">
       <div class="row">
@@ -34,7 +24,6 @@
     </div>
   </section>
 
-  <!-- end about section -->
 
 
   

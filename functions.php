@@ -3,33 +3,37 @@
 // ჰედერის ფუნქცია 
 // ავტორი ანი ლომიძე
 
-function ContactsInfo ($contacts) {
-    foreach ($contacts as $contact) {
+function ContactsInfo($contacts) {
+    for ($i = 0; $i < count($contacts); $i++) {
         echo '<a href="">';
-        echo '<i class="fa ' . $contact['icon'] . '" aria-hidden="true"></i>';
-        echo '<span> ' . $contact['text'] . '</span>';
+        echo '<i class="fa ' . $contacts[$i]['icon'] . '" aria-hidden="true"></i>';
+        echo '<span> ' . $contacts[$i]['text'] . '</span>';
         echo '</a>';
     }
 }
 
 
 function navmenu($menu_nav) {
-    foreach ($menu_nav as $item) {
+    $i = 0;
+    while ($i < count($menu_nav)) {
         echo '<li class="nav-item ">';
-        echo '<a class="nav-link" href="' . $item['link'] . '">' . $item['name'];
+        echo '<a class="nav-link" href="' . $menu_nav[$i]['link'] . '">' . $menu_nav[$i]['name'];
         echo '</a>';
         echo '</li>';
+        $i++;
     }
 }
 
 
 function hedbutton($buttons) {
-    foreach ($buttons as $button) {
-        echo '<a href="' . $button['link'] . '">';
-        echo '<i class="fa ' . $button['icon'] . '" aria-hidden="true"></i>';
-        echo '<span>' . $button['text'] . '</span>';
+    $i = 0;
+    do {
+        echo '<a href="' . $buttons[$i]['link'] . '">';
+        echo '<i class="fa ' . $buttons[$i]['icon'] . '" aria-hidden="true"></i>';
+        echo '<span>' . $buttons[$i]['text'] . '</span>';
         echo '</a>';
-    }
+        $i++;
+    } while ($i < count($buttons));
 }
 
 
@@ -44,9 +48,7 @@ function Searchicon($search_icon) {
 
 
 
-
-
-// სლაიდერი ნიკო ფუნქცია 
+// სლაიდერი mico ფუნქცია 
 // ავტორი ანი ლომიძე
 function slaider_niko($slides) {
     $output = '<section class="slider_section">';
@@ -79,32 +81,35 @@ function slaider_niko($slides) {
     return $output;
 }
 
-// სლაიდერი ნიკო ფუნქცია 
+// სლაიდერი mico ფუნქცია 
 // ავტორი ანი ლომიძე
 
 
 
 
-// ვისიტის დაჯავშნის ფუნქცია 
+// ვიზიტის დაჯავშნის ფუნქცია 
 // ავტორი გურამ ლომაძე
 function back_button() {
-    
-    if (isset($_SERVER['HTTP_REFERER'])) {
+    $url = '';
+    switch (true) {
+        case isset($_SERVER['HTTP_REFERER']):
+            $url = $_SERVER['HTTP_REFERER'];
+            break;
 
-        $url = $_SERVER['HTTP_REFERER'];
-    } else {
-       
-        $url = 'index.php'; 
+        default:
+            $url = 'index.php';
+            break;
     }
-    
     return $url;
 }
 
 function generate_select($name, $id, $options, $placeholder) {
     $html = "<select name='$name' class='form-control wide' id='$id'>";
     $html .= "<option value=''>$placeholder</option>";
-    foreach ($options as $option) {
-        $html .= "<option value='$option'>$option</option>";
+    $i = 0;
+    while ($i < count($options)) {
+        $html .= "<option value='" . htmlspecialchars($options[$i]) . "'>" . htmlspecialchars($options[$i]) . "</option>";
+        $i++;
     }
     $html .= "</select>";
     return $html;
@@ -135,10 +140,8 @@ function validateForm($data) {
     }
     return true;
 }
-// ვისიტის დაჯავშნის ფუნქცია 
+// ვიზიტის დაჯავშნის ფუნქცია 
 // ავტორი გურამ ლომაძე
-
-
 
 
 
@@ -156,9 +159,6 @@ function display_about_hospital($data) {
 }
 // ავტორი თამუნა ვეფხვაძე
 // ჰოსპიტალის შესახებ 
-
-
-
 
 
 
@@ -191,12 +191,6 @@ function TreatmentContent($MedicalCare)
 }
 // ავტორი თამუნა ვეფხვაძე
 // ჰოსპიტალური მლურნალობა
-
-
-
-
-
-
 
 
 
@@ -270,9 +264,6 @@ function display_testimonials($testimonials) {
 
 
 
-
-
-
 // ფუთერის ფუნქციები
 // ავტორი ნუცა გოგინაშვილი
 
@@ -281,17 +272,15 @@ function display_testimonials($testimonials) {
 
 function generateContactInfo($data) {
     $html = '<div class="info_contact">';
-    foreach ($data as $item) {
-        $html .= '<a href="' . htmlspecialchars($item['link']) . '">';
-        $html .= '<i class="fa ' . htmlspecialchars($item['icon']) . '" aria-hidden="true"></i>';
-        $html .= '<span>' . htmlspecialchars($item['text']) . '</span>';
+    for ($i = 0; $i < count($data); $i++) {
+        $html .= '<a href="' . htmlspecialchars($data[$i]['link']) . '">';
+        $html .= '<i class="fa ' . htmlspecialchars($data[$i]['icon']) . '" aria-hidden="true"></i>';
+        $html .= '<span>' . htmlspecialchars($data[$i]['text']) . '</span>';
         $html .= '</a>';
     }
     $html .= '</div>';
     return $html;
 }
-
-
 
 
 
@@ -300,14 +289,15 @@ function generateContactInfo($data) {
 
 function generateSocialLinks($links) {
     $html = '';
-    foreach ($links as $link) {
-        $html .= '<a href="' . htmlspecialchars($link['link']) . '">';
-        $html .= '<i class="fa ' . htmlspecialchars($link['icon']) . '" aria-hidden="true"></i>';
+    $i = 0;
+    while ($i < count($links)) {
+        $html .= '<a href="' . htmlspecialchars($links[$i]['link']) . '">';
+        $html .= '<i class="fa ' . htmlspecialchars($links[$i]['icon']) . '" aria-hidden="true"></i>';
         $html .= '</a>';
+        $i++;
     }
     return $html;
 }
-
 
 
 
@@ -315,16 +305,17 @@ function generateSocialLinks($links) {
 
 function generateMenuLinks($links) {
     $html = '<div class="info_links_menu">';
-    foreach ($links as $link) {
-        $activeClass = $link['is_active'] ? 'active' : '';
-        $html .= '<a class="' . $activeClass . '" href="' . htmlspecialchars($link['link']) . '">';
-        $html .= htmlspecialchars($link['text']);
+    $i = 0;
+    do {
+        $activeClass = $links[$i]['is_active'] ? 'active' : '';
+        $html .= '<a class="' . $activeClass . '" href="' . htmlspecialchars($links[$i]['link']) . '">';
+        $html .= htmlspecialchars($links[$i]['text']);
         $html .= '</a>';
-    }
+        $i++;
+    } while ($i < count($links));
     $html .= '</div>';
     return $html;
 }
-
 
 
 // ფუთერის კონტენტი
@@ -345,7 +336,6 @@ function generateLatestPosts($posts) {
 }
 
 
-
 // ფუთერის კონტენტი
 
 function saveEmail($email) {
@@ -360,8 +350,6 @@ function redirectToThankYou() {
     header("Location: thankyou.php");
     exit();
 }
-
-
 
 // ფუთერის ფუნქციები
 // ავტორი ნუცა გოგინაშვილი

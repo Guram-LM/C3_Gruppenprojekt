@@ -1,6 +1,6 @@
 
-     <!-- ექიმების სლაიდერი
-       ავტორი მართა მოსაშვილი -->
+<!-- ექიმების სლაიდერი
+     ვტორი მართა მოსაშვილი -->
 
     <section class="client_section layout_padding">
     <div class="container">
@@ -28,12 +28,11 @@
             </div>
         </div>
     </div>
-</section>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-<!-- ექიმების სლაიდერი
-     ავტორი მართა მოსაშვილი -->
+
 
 
  
