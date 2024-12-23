@@ -80,6 +80,56 @@ function slaider_niko($slides) {
 
 
 
+// ვისიტის დაჯავშნის ფუნქცია 
+// ავტორი გურამ ლომაძე
+function back_button() {
+    
+  if (isset($_SERVER['HTTP_REFERER'])) {
+
+      $url = $_SERVER['HTTP_REFERER'];
+  } else {
+     
+      $url = 'index.php'; 
+  }
+  
+  return $url;
+}
+
+function generate_select($name, $id, $options, $placeholder) {
+  $html = "<select name='$name' class='form-control wide' id='$id'>";
+  $html .= "<option value=''>$placeholder</option>";
+  foreach ($options as $option) {
+      $html .= "<option value='$option'>$option</option>";
+  }
+  $html .= "</select>";
+  return $html;
+}
+
+function generate_input($type, $name, $id, $placeholder, $extra_classes = '') {
+  return "<input type='$type' class='form-control $extra_classes' name='$name' id='$id' placeholder='$placeholder'>";
+}
+
+function generate_date_picker($id, $name) {
+  return "
+  <div class='input-group date' id='$id' data-date-format='mm-dd-yyyy'>
+      <input type='text' class='form-control' name='$name' readonly>
+      <span class='input-group-addon date_icon'>
+          <i class='fa fa-calendar' aria-hidden='true'></i>
+      </span>
+  </div>";
+}
+
+function validateForm($data) {
+  foreach ($data as $key => $value) {
+      if (empty($value)) {
+          return false; 
+      }
+  }
+  return true;
+}
+// ვისიტის დაჯავშნის ფუნქცია 
+// ავტორი გურამ ლომაძე
+
 
 // ავტორი თამუნა ვეფხვაძე
 // ჰოსპიტალის შესახებ 
