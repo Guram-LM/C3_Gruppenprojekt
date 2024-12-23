@@ -1,10 +1,11 @@
+
+<!-- ვიზიტის ჯავშანი
+     ავტორი გურამ ლომაძე -->
+     
 <section class="book_section layout_padding">
     <div class="container">
       <div class="row">
         <div class="col">
-
-
-
         <form action="./process.php" method="POST">
                     <h4>BOOK <span>APPOINTMENT</span></h4>
                     <div class="form-row">
@@ -39,11 +40,6 @@
                         <button type="submit" class="btn">Submit Now</button>
                     </div>
                 </form>
-
-
-
-
-
         </div>
       </div>
     </div>

@@ -1,3 +1,4 @@
+
 <?php
 include "./data.php";
 include "./functions.php";
@@ -40,6 +41,8 @@ include "./functions.php";
   <link href="css/responsive.css" rel="stylesheet" />
 
 </head>
+
+
 
   <!-- ჰედერი
        ავტორი ანი ლომიძე -->
@@ -98,7 +101,3 @@ include "./functions.php";
         </div>
       </div>
     </header>
-
-
-  <!-- ჰედერი
-       ავტორი ანი ლომიძე -->

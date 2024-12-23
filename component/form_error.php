@@ -1,3 +1,7 @@
+
+<!-- შეცდომის გვერდი
+     ავტორი C-ჯგუფი -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +16,6 @@ echo    '<div class="nev-page">
         <h2>გთხოვთ შეავსოთ ყველა ველი!</h2>
         <a href="index.php"><button class="batuna">მთავარ გვერდზე დაბრუნება</button></a>
         </div>'
-
 ?>
 </body>
 </html>

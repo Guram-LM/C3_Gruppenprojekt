@@ -1,5 +1,8 @@
 
 
+<!-- mico გვერდი
+     ავტორი ანი ლომიძე -->
+
 <div class="hero_area">
 
     <?php

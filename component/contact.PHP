@@ -1,5 +1,7 @@
 
-  <!-- შეტყობინების გასაგზანი ფორმა-->
+<!-- შეტყობინების მიღების ველი
+     ავტორი გურამ ლომაძე -->
+     
   <?php
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -53,6 +55,3 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </div>
     </section>
 
-
-
-  <!-- footer section -->
