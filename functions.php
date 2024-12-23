@@ -1,4 +1,47 @@
 <?php
+// ჰედერის ფუნქცია 
+// ავტორი ანი ლომიძე
+
+function ContactsInfo ($contacts) {
+  foreach ($contacts as $contact) {
+      echo '<a href="">';
+      echo '<i class="fa ' . $contact['icon'] . '" aria-hidden="true"></i>';
+      echo '<span> ' . $contact['text'] . '</span>';
+      echo '</a>';
+  }
+}
+
+
+function navmenu($menu_nav) {
+  foreach ($menu_nav as $item) {
+      echo '<li class="nav-item ">';
+      echo '<a class="nav-link" href="' . $item['link'] . '">' . $item['name'];
+      echo '</a>';
+      echo '</li>';
+  }
+}
+
+
+function hedbutton($buttons) {
+  foreach ($buttons as $button) {
+      echo '<a href="' . $button['link'] . '">';
+      echo '<i class="fa ' . $button['icon'] . '" aria-hidden="true"></i>';
+      echo '<span>' . $button['text'] . '</span>';
+      echo '</a>';
+  }
+}
+
+
+function Searchicon($search_icon) {
+  echo '<button class="' . $search_icon['class'] . '" type="' . $search_icon['type'] . '">';
+  echo '<i class="fa ' . $search_icon['icon'] . '" aria-hidden="' . $search_icon['aria_hidden'] . '"></i>';
+  echo '</button>';
+}
+
+// ჰედერის ფუნქცია 
+// ავტორი ანი ლომიძე
+
+
 
 // ავტორი თამუნა ვეფხვაძე
 // ჰოსპიტალის შესახებ 

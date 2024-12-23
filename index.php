@@ -1,4 +1,11 @@
 
+<!-- ჰედერი ავტორი ანი ლომიძე -->
+<?php
+  include "./component/header.php";
+  ?>
+<!-- ჰედერი ავტორი ანი ლომიძე -->
+
+
 <!-- ჰოსპიტალური მკურნალობა ავტორი თამუნა ვეფხვაძე -->
 <?php
   include "./component/Hospital-Treatment.php";
