@@ -56,12 +56,12 @@ $menu_nav = [
 
 $buttons = [
     [
-        "link" => "login.php", 
+        "link" => "index.php", 
         "icon" => "fa-user", 
         "text" => "Login"
     ],
     [
-        "link" => "signup.php", 
+        "link" => "index.php", 
         "icon" => "fa-user", 
         "text" => "Sign Up"
     ]
