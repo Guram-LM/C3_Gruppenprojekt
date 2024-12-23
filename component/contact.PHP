@@ -7,7 +7,7 @@
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $errors = validateForm($_POST);
 
-    // Switch ბლოკი 
+    // დანაპირები Switch ბლოკი აქ არის გუგა 
     switch (true) {
         case empty($errors): 
             
