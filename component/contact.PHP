@@ -1,5 +1,5 @@
 
-<!-- ვიზიტის დაჯავშნა 
+<!-- კონტაქტის ველი 
     ავტორი გურამ ლომაძე -->
 
   <?php
@@ -7,7 +7,7 @@
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $errors = validateForm($_POST);
 
-   
+    // Switch ბლოკი 
     switch (true) {
         case empty($errors): 
             
@@ -54,5 +54,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </div>
         </div>
     </section>
-<!-- ვიზიტის დაჯავშნა 
+<!-- კონტაქტის ველი 
     ავტორი გურამ ლომაძე -->
