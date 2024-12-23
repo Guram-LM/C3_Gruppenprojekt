@@ -1,6 +1,80 @@
 <?php
 
+// საკონტაქტო და მისამართის ინფორმაცია
+// ავტორი ანი ლომიძე
+$contacts = [
+    [
+        "icon" => "fa-phone",
+        "text" => "Call : +01 123455678990"
+    ],
+    [
+        "icon" => "fa-envelope",
+        "text" => "Email : demo@gmail.com"
+    ],
+    [
+        "icon" => "fa-map-marker",
+        "text" => "Location"
+    ]
+];
+// საკონტაქტო და მისამართის ინფორმაცია
+// ავტორი ანი ლომიძე
 
+
+// ჰედერი
+// ავტორი ანი ლომიძე
+$menu_nav = [
+    [
+        "name" => "Home", 
+        "link" => "./index.php", 
+    ],
+    [
+        "name" => "About", 
+        "link" => "./about.php", 
+
+    ],
+    [
+        "name" => "Treatment", 
+        "link" => "./treatment.php", 
+
+    ],
+    [
+        "name" => "Doctors", 
+        "link" => "./doctor.php", 
+
+    ],
+    [
+        "name" => "Testimonial", 
+        "link" => "./testimonial.php", 
+
+    ],
+    [
+        "name" => "Contact Us", 
+        "link" => "./contact.php", 
+
+    ],
+];
+
+$buttons = [
+    [
+        "link" => "login.php", 
+        "icon" => "fa-user", 
+        "text" => "Login"
+    ],
+    [
+        "link" => "signup.php", 
+        "icon" => "fa-user", 
+        "text" => "Sign Up"
+    ]
+];
+
+$search = [
+    "icon" => "fa-search",
+    "class" => "btn my-2 my-sm-0 nav_search-btn",
+    "type" => "submit",
+    "aria_hidden" => "true"
+];
+// ჰედერი
+// ავტორი ანი ლომიძე
 
 // ავტორი თამუნა ვეფხვაძე
 // ჰოსპიტალის შესახებ 
