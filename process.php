@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $validation_stage = "success";
     }
 
-    // Switch ბლოკი 
+    // დანაპირები Switch ბლოკი აქ არის გიგა 
 
     switch ($validation_stage) {
         case "empty_fields":
