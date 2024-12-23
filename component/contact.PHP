@@ -1,13 +1,11 @@
 
-<!-- კონტაქტის ველი 
-    ავტორი გურამ ლომაძე -->
-
+  <!-- შეტყობინების გასაგზანი ფორმა-->
   <?php
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $errors = validateForm($_POST);
 
-    // დანაპირები Switch ბლოკი აქ არის გუგა 
+   // დანაპირები Switch ბლოკი აქ არის გუგა 
     switch (true) {
         case empty($errors): 
             
@@ -54,5 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </div>
         </div>
     </section>
-<!-- კონტაქტის ველი 
-    ავტორი გურამ ლომაძე -->
+
+
+
+  <!-- footer section -->
