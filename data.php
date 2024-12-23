@@ -76,6 +76,34 @@ $search = [
 // ჰედერი
 // ავტორი ანი ლომიძე
 
+// სლაიდერი mico
+// ავტორი ანი ლომიძე
+$slides = [
+    [
+        'title' => 'Mico',
+        'subtitle' => 'Hospital',
+        'description' => 'When looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to.',
+        'button_text' => 'Contact Us',
+        'image' => 'images/slider-img.jpg',
+    ],
+    [
+        'title' => 'Mico',
+        'subtitle' => 'Clinic',
+        'description' => 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+        'button_text' => 'Learn More',
+        'image' => 'images/slider-img.jpg',
+    ],
+    [
+        'title' => 'Mico',
+        'subtitle' => 'Care Center',
+        'description' => 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature.',
+        'button_text' => 'Read More',
+        'image' => 'images/slider-img.jpg',
+    ],
+];
+// სლაიდერი mico
+// ავტორი ანი ლომიძე
+
 // ავტორი თამუნა ვეფხვაძე
 // ჰოსპიტალის შესახებ 
 $about_hospital = [
